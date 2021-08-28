@@ -1,0 +1,166 @@
+/** version mobile - (Mobile first) */ 
+:root {
+    /** les variables de couleur */
+    /** Couleur principal du design : #ff6347 */
+    --design-color: #ff6347;
+    --text-color-w: white;
+    --text-color-b: black;
+    --text-color-g: rgb(199, 198, 198);
+    --bg-color-w: white;
+    --bg-color-g: rgb(243, 242, 242);
+}
+/*  */
+/* body */
+/*  */
+body {
+    font-family: 'Arvo', serif;
+    /* Arvo en 400 (regular) et 700 (bold) */
+    font-size: 16px;
+    margin:0;
+}
+/*  */
+/* header */
+/*  */
+header {
+    /* couleur de fond en noir */
+    background-color: var(--text-color-b);
+}
+.divRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh 5vh;
+}
+.div_menu_burger {
+    /* div affichée en Mobile uniquement */
+    display: block;
+}
+.div_menu_desk {
+/* div affichée en version ordinateur uniquement */
+    display: none;
+}
+.liRow {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+.burger {
+    /* taille menu burger */
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* */
+/* main */
+/* */
+
+/* section 1 */ 
+/* section identique en mobile et en ordi*/
+.sect-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/hero-image.jpg');
+}
+.sect-1-div-h{
+    padding: 2vh 5vh 0 5vh;
+    color: var(--text-color-w);
+}
+.sect-1-div-p {
+    color: var(--text-color-g);
+    padding: 0 6vh 2vh 6vh;
+}
+.sect-1-div-p p span{
+    color: var(--text-color-w);
+}
+.sect-1-div {
+    padding: 2vh 5vh;
+}
+.btn-red {
+    text-decoration: none;
+    color: var(--text-color-w);
+    background-color: var(--design-color);
+    padding: 2vh;
+    border-radius: 5px;
+}
+
+/* section 2 */
+/* section identique en mobile et en ordi*/
+.sect-2 {
+    text-align: center;
+    color: var(--text-color-b);
+    padding: 2vh 4vh;
+}
+.sect-2 span{
+    color: var(--design-color)
+}
+.sect-2 hr {
+    border: none;
+    border-top: 2px solid var(--design-color);
+    overflow: visible;
+    text-align: center;
+    height: 3px;
+    width: 150px; 
+}
+.sect-2 h2 {
+    color: var(--design-color);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/* section 3 */ 
+/* section différente en mobile et en ordi*/
+.sect-3 {
+    text-align: center;
+    color: var(--text-color-b);
+    padding: 2vh 2vh;
+    background-color: var(--bg-color-g);
+}
+.sect-3-divflex{
+    display: flex;
+    flex-direction: column;
+}
+.sect-3-div{
+    padding: 1vh 3vh 5vh 3vh;
+}
+.sect-3 h3{
+    color: var(--design-color);
+    font-weight: 400;
+    font-size: 2em;
+}
+.sect-3 hr {
+    border: none;
+    border-top: 2px solid var(--design-color);
+    overflow: visible;
+    text-align: center;
+    height: 3px;
+    width: 150px;
+    margin-top: -22px; 
+}
+.sect-3 h4{
+    color: var(--design-color);
+    font-weight: 400;
+    font-size: 1.6em;
+    margin: 0;
+}
+.sect-3 a{
+    text-decoration: none;
+    color: var(--design-color);
+    background-color: var(--text-color-w);
+    font-weight: 400;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    border: var(--text-color-g) solid 1px;
+}
+/*  */
+/* footer */
+/*  */
+footer {
+    /* couleur de fond en rouge */
+    background-color: var(--design-color);   
+}
+.div-foot{
+    padding-top: 20vh;
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+}

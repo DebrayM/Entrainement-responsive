@@ -1,0 +1,35 @@
+@media (min-width: 1200px) {
+    /** version ordinateur*/ 
+
+
+/* header */
+.div_menu_burger {
+    /* div affichée en Mobile uniquement */
+    display: none;
+}
+.div_menu_desk {
+/* div affichée en version ordinateur uniquement */
+    display: inline;
+}
+.divRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+.liRow {
+    color: var(--text-color-g);
+}
+
+/* section 3 */
+.sect-3-divflex{
+    display: flex;
+    flex-direction: row;
+}
+
+}
